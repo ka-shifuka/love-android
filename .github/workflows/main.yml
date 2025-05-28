@@ -35,7 +35,7 @@ jobs:
       uses: actions/upload-artifact@v4
       with:
         name: love-android.apk
-        path: app/build/outputs/apk/normalRecord/release/app-normal-record-release-unsigned.apk
+        path: app/build/outputs/apk/**/*.apk
     - name: Artifact (Normal AAB w/o recording)
       if: ${{ matrix.build_type == 'Release' }}
       uses: actions/upload-artifact@v4
